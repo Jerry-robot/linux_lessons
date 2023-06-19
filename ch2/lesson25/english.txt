@@ -1,0 +1,9 @@
+gjw@gjw:~/linux_lessons$ man tru
+true        trunc       truncate    truncate64  truncf      truncl      trust       
+gjw@gjw:~/linux_lessons$ man truncate
+gjw@gjw:~/linux_lessons$ man 1 truncate
+gjw@gjw:~/linux_lessons$ man 3 truncate
+在第 3 节中没有关于 truncate 的手册页条目。
+当没有手册页时，可以用 man 7 undocumented 命令来寻求帮助。
+gjw@gjw:~/linux_lessons$ man 2 truncate
+gjw@gjw:~/linux_lessons$     close (fd);
