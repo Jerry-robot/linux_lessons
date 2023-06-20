@@ -65,6 +65,7 @@ int main(int argc, char *argv[])
         if (len == 0)
         {
             printf("client closed...\n");
+            break;
         }
         else if (len > 0)
         {
