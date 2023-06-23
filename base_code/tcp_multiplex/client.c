@@ -27,10 +27,11 @@ int main(int argc, char *argv[])
         exit(0);
     }
     char recvBuf[1024];
-    int i = 0;
+    // int i = 0;
     while (1)
     {
-        sprintf(recvBuf, "data : %d\n", i++);
+        // sprintf(recvBuf, "data : %d\n", i++);
+        fgets(recvBuf, sizeof(recvBuf), stdin);
         int len = write(fd, recvBuf, strlen(recvBuf)+1);
         // printf("client send data len : %d\n", len);
         len = read(fd, recvBuf, sizeof(recvBuf));
@@ -43,7 +44,8 @@ int main(int argc, char *argv[])
             perror("read");
             break;
         }
-        sleep(1);
+        // sleep(1);
+        // usleep(1000);
     }
 
     close(fd);
